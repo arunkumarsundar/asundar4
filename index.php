@@ -6,7 +6,7 @@
     $varUname = $_GET['uname'];
     $varUpword = $_GET['upword'];
     //simple logic to validate the provided Username and UserPassword
-    if $varUname == "Arun" and $varUpword == "Maverick"
+    if($varUname == "Arun" and $varUpword == "Maverick")
     {
       $response['Message'] = "Login successfull";
       $response['Organisation'] = "Top Gun";
@@ -24,8 +24,6 @@
   else
   {
     $response['Message'] = "Invalid JSON request";
-    $response['Useraction"] = "Contact developer in order to obtain correct JSON structure";
+    $response['Useraction'] = "Contact developer in order to obtain correct JSON structure";
     echo json_encode($response);
   }
-      
-      
